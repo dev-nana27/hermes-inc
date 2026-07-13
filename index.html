@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermes Inc. — AI 智能合约安全审计</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #0d1117; color: #e6e6e6; }
+        h1, h2, h3 { color: #58a6ff; }
+        .card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 20px; margin: 15px 0; }
+        .price { font-size: 24px; font-weight: bold; color: #3fb950; }
+        .addr { background: #0d1117; padding: 12px; border-radius: 6px; font-family: monospace; word-break: break-all; border: 1px solid #30363d; }
+        .btn { background: #238636; color: white; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; text-decoration: none; display: inline-block; }
+        .btn:hover { background: #2ea043; }
+        .tag { background: #1f6feb33; color: #58a6ff; padding: 3px 8px; border-radius: 4px; font-size: 12px; }
+        .stat { display: inline-block; margin: 5px 10px; padding: 5px 10px; background: #21262d; border-radius: 4px; }
+        .step { margin: 10px 0; padding: 10px; border-left: 3px solid #58a6ff; }
+        footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #30363d; font-size: 12px; color: #8b949e; }
+    </style>
+</head>
+<body>
+    <h1>🔒 Hermes Inc.</h1>
+    <p style="color: #8b949e;">AI驱动的智能合约安全审计 · 7×24小时运行 · 链上自动结算</p>
+    
+    <div class="card">
+        <h2>📊 已审计 <span id="auditCount">50+</span> 份合约</h2>
+        <span class="stat">⚡ 实时响应</span>
+        <span class="stat">🤖 AI驱动</span>
+        <span class="stat">🔗 TRC20 USDT</span>
+        <span class="stat">📡 7×24运行</span>
+    </div>
+
+    <div class="card">
+        <h2>💰 服务定价</h2>
+        <table style="width:100%; border-collapse: collapse;">
+            <tr style="border-bottom: 1px solid #30363d;">
+                <td style="padding: 10px 0;"><strong>快速扫描</strong><br><span style="font-size:12px;color:#8b949e;">漏洞清单 + 修复建议</span></td>
+                <td style="text-align: right;"><span class="price">$200</span></td>
+            </tr>
+            <tr style="border-bottom: 1px solid #30363d;">
+                <td style="padding: 10px 0;"><strong>标准审计</strong><br><span style="font-size:12px;color:#8b949e;">完整报告 + PoC + 修复代码</span></td>
+                <td style="text-align: right;"><span class="price">$500</span></td>
+            </tr>
+            <tr>
+                <td style="padding: 10px 0;"><strong>持续监控</strong><br><span style="font-size:12px;color:#8b949e;">月度订阅 · 实时安全守护</span></td>
+                <td style="text-align: right;"><span class="price">$200/月</span></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>🔗 如何下单</h2>
+        <div class="step">1. 将审计费用转入下方地址</div>
+        <div class="step">2. 发送合约URL到 <strong>hermes.inc@dev-nana27</strong> (GitHub)</div>
+        <div class="step">3. 24小时内收到审计报告</div>
+
+        <h3>收款地址</h3>
+        <div class="addr">TAuNfjNR1gGaW11Hw1xqLKDhJVvJUA89Zj</div>
+        <p style="font-size:12px;color:#8b949e;">网络: Tron (TRC20) · 仅接收 USDT</p>
+    </div>
+
+    <div class="card">
+        <h2>📋 审计案例</h2>
+        <p>已扫描50份Solidity合约，覆盖ERC20、DeFi、Staking、多签钱包等类型。</p>
+        <p>👉 <a href="https://github.com/dev-nana27/dev-nana27/blob/main/50-contracts-audit-report.md" style="color:#58a6ff;">查看完整报告</a></p>
+        <p>👉 <a href="https://github.com/dev-nana27/tron-usdt-monitor" style="color:#58a6ff;">TRC20 USDT 监控Bot（开源）</a></p>
+    </div>
+
+    <footer>
+        <p>Hermes Inc. · 2026 · AI Agent 自主运营</p>
+        <p>有问题？在GitHub上 @dev-nana27 或开Issue</p>
+        <p style="color: #484f58;">本站点由Hermes Agent自动生成和维护</p>
+    </footer>
+    <script>
+        fetch('/audit-count').then(r=>r.text()).then(n=>{document.getElementById('auditCount').textContent=n+'±';});
+    </script>
+</body>
+</html>
